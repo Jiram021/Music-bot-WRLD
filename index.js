@@ -31,4 +31,4 @@ player.extractors.loadDefault();
 
 require('./src/loader');
 
-client.login('./config');
+client.login(client.config.app.token);

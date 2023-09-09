@@ -4,7 +4,7 @@ A complete code to download for a music bot 🎧
 
 Looking for a code for a music bot ? This fully open source code is made for your project !
 
-If you need help with this project, to get support faster you can join the help server by just clicking [here](https://discord.gg/5cGSYV8ZZj).
+If you need help with this project, to get support faster you can join the help server by just clicking [here](https://discord.gg/pySJ3HnTNR).
 
 *If you don't have any development knowledge, it is recommended to join the Discord support server to get help.*
 

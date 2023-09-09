@@ -1,9 +1,9 @@
 module.exports = {
     app: {
-        token: xxx,
+        token: process.env.token,
         playing: 'by Jiram ❤️',
         global: true,
-        guild: '1041369126398074962',
+        guild: 'xxx',
         ExtraMessages: false,
         loopMessage: false,
 

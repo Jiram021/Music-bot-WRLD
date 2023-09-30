@@ -1,8 +1,17 @@
 const { Player } = require('discord-player');
 const Genius = require("genius-lyrics");
 const { Client, GatewayIntentBits } = require('discord.js');
+const Eris = require("eris");
+const keep_alive = require('./keep_alive.js')
 
+// Replace TOKEN with your bot account's token
+const bot = new Eris('');
 
+bot.on("error", (err) => {
+  console.error(err); // or your preferred logger
+});
+
+bot.connect(); // Get the bot to connect to Discord
 
 global.client = new Client({
     intents: [
@@ -17,6 +26,7 @@ global.client = new Client({
 
 client.config = require('./config');
 
+// Create a new instance of the Player
 const player = new Player(client, client.config.opt.discordPlayer);
 global.genius = new Genius.Client();
 player.extractors.loadDefault();
@@ -47,6 +57,8 @@ client.on("ready", () => {
 
 });
 
+// Load your loader and events here
 require('./src/loader');
 
+// Log in to Discord using the bot token
 client.login(client.config.app.token);
